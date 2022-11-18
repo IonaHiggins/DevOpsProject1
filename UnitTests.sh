@@ -4,7 +4,7 @@
 echo "Testing inputs";
 
 #Describes the input values which the program will run with.
-currency=$"dollars";
+currency=$"euros";
 amount=$"50";
 
 #Prints the inputs to Jenkins console
