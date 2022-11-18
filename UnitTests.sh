@@ -25,7 +25,7 @@ then
 	currency=$"dollars"
 	echo "Valid currency type";
 	echo "Test Passed";
-	expectedPounds=$["$amount"*1.36];
+	expectedPounds=$["$amount" * 1.36];
 	echo "$expectedPounds";
 
 
