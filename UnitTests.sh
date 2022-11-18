@@ -4,7 +4,7 @@
 echo "Testing inputs";
 
 #Describes the input values which the program will run with.
-currency=$"euros";
+currency=$"pounds";
 amount=$"50";
 
 #Prints the inputs to Jenkins console
@@ -42,7 +42,7 @@ then
 	
 	echo "Testing Arithmatic";
 	expectedOutput=$"50.0 Pounds = 68 Dollars
-50.0 Pounds = 59.5 Euros
+50.0 Pound = 59.5 Euros
 Thank you for using the converter.";
 
 #Checks if the euros input has been fully capitalised or capitalised at the beginning. If this is true, the capitalisation is removed to avoid errors.
