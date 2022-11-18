@@ -1,5 +1,5 @@
 #!/bin/bash
-currency='java CurrencyConverter(currency)';
+currency=java CurrencyConverter(currency);
 echo "$currency";
 
 if [ "$currency" == "dollars" ] || [ "$currency" == "Dollars" ] || [ "$currency" == "DOLLARS" ]
