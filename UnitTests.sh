@@ -20,7 +20,7 @@ then
 	exit 1;
 
 #Checks if the dollars input has been fully capitalised or capitalised at the beginning. If this is true, the capitalisation is removed to avoid errors.
-elif [ "$currency" == "Dollars" ] || [ "$currency" == "DOLLARS" ]	
+elif  [ "$currency" == "dollars" ] || [ "$currency" == "Dollars" ] || [ "$currency" == "DOLLARS" ]	
 then
 	currency=$"dollars"
 	echo "Valid currency type";
@@ -34,7 +34,7 @@ Thank you for using the converter.";
 
 
 #Checks if the pounds input has been fully capitalised or capitalised at the beginning. If this is true, the capitalisation is removed to avoid errors.
-elif [ "$currency" == "Pounds" ] || [ "$currency" == "POUNDS" ]
+elif [ "$currency" == "pounds" ] || [ "$currency" == "Pounds" ] || [ "$currency" == "POUNDS" ]
 then 
 	currency=$"pounds";
 	echo "Valid currency type";
@@ -46,7 +46,7 @@ then
 Thank you for using the converter.";
 
 #Checks if the euros input has been fully capitalised or capitalised at the beginning. If this is true, the capitalisation is removed to avoid errors.
-elif [ "$currency" == "Euros" ] || [ "$currency" == "EUROS" ]
+elif [ "$currency" == "euros" ] || [ "$currency" == "Euros" ] || [ "$currency" == "EUROS" ]
 then 
 	currency=$"euros";
 	echo "Valid Currency Type";
