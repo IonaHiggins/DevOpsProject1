@@ -14,7 +14,7 @@ then
                 echo "dollars functional";
                 fi
         else
-                echo "An issue has occured";
+                echo "A maths issue has occured(dollars)";
                 exit 1;
 		fi
 
@@ -26,7 +26,7 @@ then
                 echo "pounds functional";
                 fi
         else
-                echo "An issue has occured";
+                echo "A maths issue has occured(pounds)";
                 exit 1;
 		fi 
 
@@ -39,7 +39,7 @@ then
                 echo "euros functional";
                 fi
         else
-                echo "An issue has occured";
+                echo "A maths issue has occured (euros)";
                 exit 1;
 fi
 else
