@@ -25,7 +25,8 @@ then
 	currency=$"dollars"
 	echo "Valid currency type";
 	echo "Test Passed";
-
+	expectedPounds=$["$amount"*1.36];
+	echo "$expectedPounds";
 
 
 #Checks if the pounds input has been fully capitalised or capitalised at the beginning. If this is true, the capitalisation is removed to avoid errors.
@@ -54,3 +55,4 @@ test=`java CurrencyConverter "$amount" "$currency"`;
 
 #Prints the results of the java CurrencyConverter program to the Jenkins shell.
 echo "$test";
+
