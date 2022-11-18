@@ -19,23 +19,23 @@ public class CurrencyConverter {
                 switch (currency){
                         case "dollars" :
                                 // For Dollar Conversion
-                                pound = amount * 0.74;
+                                pound = (amount * 0.74);
                                 logger.log(amount + " Dollars = " + f.format(pound) + " Pounds");
-                                euro = amount * 0.88;
+                                euro = (amount * 0.88);
                                 logger.log(amount + " Dollars = " + f.format(euro) + " Euros");
                                 break;
                         case "pounds":
                                 // For Pound Conversion
-                                dollar = amount * 1.36;
+                                dollar = (amount * 1.36);
                                 logger.log(amount + " Pounds = " + f.format(dollar) + " Dollars");
-                                euro = amount * 1.19;
+                                euro = (amount * 1.19);
                                 logger.log(amount + " Pound = " + f.format(euro) + " Euros");
                                 break;
                         case "euros":
                                 // For Euro Conversion
-                                dollar = amount * 1.13;
+                                dollar = (amount * 1.13);
                                 logger.log(amount + " Euros = " + f.format(dollar) + " Dollars");
-                                pound = amount * 0.84;
+                                pound = (amount * 0.84);
                                 logger.log(amount + " Euros = " + f.format(pound) + " Pounds");
                                 break;
 			default:
