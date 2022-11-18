@@ -4,7 +4,7 @@
 echo "Testing inputs";
 
 #Describes the input values which the program will run with.
-currency=$"pounds";
+currency=$"euros";
 amount=$"50";
 
 #Prints the inputs to Jenkins console
@@ -53,10 +53,9 @@ then
 	echo "Test Passed";
 
 	echo "Testing Arithmatic";
-	expectedOutput=$"50.0 Euros = 65.5 Dollars
+	expectedOutput=$"50.0 Euros = 56.5 Dollars
 50.0 Euros = 42 Pounds
 Thank you for using the converter.";
-	echo "$expectedOutput";
 
 #Catches any other currency input; gives the user an error message and exits the program.
 else
@@ -74,7 +73,7 @@ then
 	#Prints the results of the java CurrencyConverter program to the Jenkins shell.
 	echo "$test";
 	echo "All currency conversions successful";
-	echo "Test Passed";
+	echo "Test Passed - All Tests Passed!";
 else
 	echo "An arithmatic error has occured"
 	echo "Test Failed";
