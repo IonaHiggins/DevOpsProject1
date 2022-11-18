@@ -35,7 +35,8 @@ public class CurrencyConverter{
 			dollar = (amount * 1.13);
 			logger.log(amount + " Euros = " + f.format(dollar) + " Dollars";
 			pound = (amount * 0.84);
-			logger.log(amount + " Euros = " + f.format(pound) + " Pounds" + "test";
+			logger.log(amount + " Euros = " + f.format(pound) + " Pounds";
+			logger.log(1.13*50);		
 			break;
 		default: 
 			error("An error has occured);
