@@ -4,7 +4,7 @@
 echo "Testing inputs";
 
 #Describes the input values which the program will run with.
-currency=$"pounds";
+currency=$"euros";
 amount=$"50";
 
 #Prints the inputs to Jenkins console
@@ -56,6 +56,7 @@ then
 	expectedOutput=$"50.0 Euros = 65.5 Dollars
 50.0 Euros = 42 Pounds
 Thank you for using the converter.";
+	echo "$expectedOutput";
 
 #Catches any other currency input; gives the user an error message and exits the program.
 else
