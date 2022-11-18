@@ -11,7 +11,7 @@ public class CurrencyConverter{
 
 	DecimalFormat f = new DecimalFormat("##.##");
 	
-	amount = double.parseDouble(args[0]);
+	amount = int.parseInt(args[0]);
 	String currency = args[1];
 		
 	//For amounts Conversion
