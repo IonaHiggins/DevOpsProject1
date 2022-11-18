@@ -8,6 +8,7 @@ expectedOutput="=50.0 Dollars = 37 Pounds
 if [ "$expectedOutput" == "$test" ]
 then
 	echo "Dollars test successful";
+	fi
 else:
 	echo "A maths issue has occured";
 fi
