@@ -1,5 +1,5 @@
 #!/bin/bash
-test=`java CurrencyConverter`;
+test=`java CurrencyConverter 50 dollars`;
 
 expectedOutput=$"50.0 Dollars = 37 Pounds
 50.0 Dollars = 44 Euros
