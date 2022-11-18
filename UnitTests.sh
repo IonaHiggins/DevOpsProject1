@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Testing inputs";
-currency=$"DOLLARS";
-amount =$"50";
+currency=$"";
+amount =$"";
 echo "The inputted currency is:" + "$currency";
 echo "The inputted amount is:" + "$amount";
 
