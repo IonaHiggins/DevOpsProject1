@@ -42,7 +42,7 @@ then
 	
 	echo "Testing Arithmatic";
 	expectedOutput=$"50.0 Pounds = 68 Dollars
-50.0 Pounds = 44 Euros
+50.0 Pounds = 59.5 Euros
 Thank you for using the converter.";
 
 #Checks if the euros input has been fully capitalised or capitalised at the beginning. If this is true, the capitalisation is removed to avoid errors.
