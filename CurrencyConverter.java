@@ -38,6 +38,9 @@ public class CurrencyConverter {
                                 pound = amount * 0.84;
                                 logger.log(amount + " Euros = " + f.format(pound) + " Pounds");
                                 break;
+			default:
+				error("An error occured");
+				break;
                 }
                 logger.log("Thank you for using the converter.");
         }
