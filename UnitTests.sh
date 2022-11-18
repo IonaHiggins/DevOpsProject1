@@ -1,8 +1,16 @@
 #!/bin/bash
 echo "Testing inputs";
 currency=$"DOLLARS";
+amount =$"50";
 echo "The inputted currency is:" + "$currency";
-if [ "$currency" == "Dollars" ] || [ "$currency" == "DOLLARS" ]	
+echo "The inputted amount is:" + "$amount";
+
+if [ "$currency" == "" ] || [ "$amount" == "" ]
+then
+	echo "Please input both a valid currency and amount.";
+	echo "Test Failed";
+	exit 1;
+elif [ "$currency" == "Dollars" ] || [ "$currency" == "DOLLARS" ]	
 then
 	currency=$"dollars"
 	echo "Valid currency type";
@@ -19,10 +27,10 @@ then
 	echo "Valid Currency Type";
 	echo "Test Passed";
 else
-	echo "Invalid currency inputted.";
+	echo "Invalid currency inputted. Please select from dollars, pounds, or euros.";
 	echo "Test Failed";
-	exit 1;
+	exit 2;
 fi
 
-test=`java CurrencyConverter 50 "$currency"`;
+test=`java CurrencyConverter "$amount" "$currency"`;
 echo "$test";
