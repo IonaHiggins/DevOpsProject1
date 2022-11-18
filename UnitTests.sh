@@ -53,7 +53,7 @@ then
 	echo "Test Passed";
 
 	echo "Testing Arithmatic";
-	expectedOutput=$"50.0 Euros = 56.5 Dollars
+	expectedOutput=$"50.0 Euros = 65.5 Dollars
 50.0 Euros = 42 Pounds
 Thank you for using the converter.";
 
