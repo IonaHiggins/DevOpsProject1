@@ -1,34 +1,28 @@
 #!/bin/bash
-test=`java CurrencyConverter 50 dollars`;
-
-expectedOutput=$"50.0 Dollars = 37 Pounds
-50.0 Dollars = 44 Euros
-Thank you for using the converter.";
-
-echo "Testing false inputs";
-
-if [ "$expectedOutput" == "$test" ]
+echo "Testing inputs";
+currency=$"DOLLARS";
+echo "The inputted currency is:" + "$currency";
+if [ "$currency" == "Dollars" ] || [ "$currency" == "DOLLARS" ]	
 then
-	echo "Input recieved.";
+	currency=$"dollars"
+	echo "Valid currency type";
+	echo "Test Passed";
+
+elif [ "$currency" == "Pounds" ] || [ "$currency" == "POUNDS" ]
+then 
+	currency=$"pounds";
+	echo "Valid currency type";
+	echo "Test Passed";
+elif [ "$currency" == "Euros" ] || [ "$currency" == "EUROS" ]
+then 
+	currency=$"euros";
+	echo "Valid Currency Type";
 	echo "Test Passed";
 else
-	echo "An error occured - unexpected input";
+	echo "Invalid currency inputted.";
 	echo "Test Failed";
 	exit 1;
 fi
 
-echo "Testing input variation";
-
-input ="DOLLARS";
-echo "$input";
-
-if [ "$input" == *"$dollars"* ] || [ "$input"  == *"$Dollars"* ] || [ "$input" == *"DOLLARS"* ] || [ "$input" == *"pounds"* ] ||  [ "$input" == *"Pounds"* ] || [ "$input" == *"POUNDS"* ] || [ "$input" == *"euros"* ] || [ "$input" == *"Euros"* ] || [ "$input" == *"EUROS"* ]
-
-then
-	echo "Valid currency type";
-	echo "Test Passed";
-else
-	echo "An error occured - unexpected input";
-	echo "Test Failed";
-	exit 2;
-fi
+test=`java CurrencyConverter 50 "$currency"`;
+echo "$test";
