@@ -1,6 +1,9 @@
 #!/bin/bash
-currency=`java CurrencyConverter 50 dollars(currency)`;
+test=`java CurrencyConverter 50 dollars`;
 echo "$currency";
+echo "$amount";
+echo "$pound";
+echo "$euro;"
 
 if [ "$currency" == "dollars" ] || [ "$currency" == "Dollars" ] || [ "$currency" == "DOLLARS" ]
 
