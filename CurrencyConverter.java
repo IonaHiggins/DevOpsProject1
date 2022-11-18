@@ -12,7 +12,7 @@ public class CurrencyConverter {
 
                 DecimalFormat f = new DecimalFormat("##.##");
 
-                amount = Double.parseDouble(args[0]);
+                amount = double.parseDouble(args[0]);
                 String currency = args[1];
 
                 // For amounts Conversion
