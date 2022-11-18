@@ -1,5 +1,5 @@
 #!/bin/bash
-test=`java CurrencyConverter 50 dollars`;
+test=`java CurrencyConverter 50 dollayrs`;
 echo "$test";
 echo "$currency";
 echo "$amount";
